@@ -22,8 +22,6 @@
 // ESERCIZIO 12: Scrivi una funzione per cambiare il colore del prezzo di ogni prodotto in uno differente, ogni volta che viene invocata
 
 
-
-
 function changeTitle () {
     let title = document.querySelector('h1')
     const firstTitle = 'Code Tell'
@@ -50,6 +48,11 @@ function changeAddress () {
 // }
 // console.log (addedClass)
 
+
+function removeClass () {
+    const classRemove = document.getElementsByTagName('td')[3]
+    classRemove.classList.remove('New Class')
+}
     
 
 
