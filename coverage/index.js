@@ -22,30 +22,31 @@
 // ESERCIZIO 12: Scrivi una funzione per cambiare il colore del prezzo di ogni prodotto in uno differente, ogni volta che viene invocata
 
 
-function changeTitle () { // validazione?
-    document.querySelector('h1').innerText = 'Shopping Cell'
+function changeTitle() {
+  // validazione?
+  document.querySelector("h1").innerText = "Shopping Cell";
+}
+
+function changeColor(colore) {
+  document.body.style.backgroundColor = colore;
+}
+
+function changeAddress() {
+  // validazione?
+  document.querySelector("h3").innerText = "Nuovo indirizzo - Via Milano 123";
+}
+
+function addedClass() {
+  let classA = document.querySelectorAll("a");
+  for (let i = 0; i < classA.length; i++) {
+    classA[i].classList.add("classAdd");
+  }
 }
 
 
-function changeColor (colore) {
-    document.body.style.backgroundColor = colore 
-}
-
-function changeAddress () { // validazione?
-    document.querySelector('h3').innerText = 'Nuovo indirizzo - Via Milano 123'
-}
-
-// function addedClass() {
-//     const newClass = document.querySelectorAll('a')
-//     newClass.classList.add('New class')
-// }
-// console.log (addedClass)
 
 
-function removeClass () {
-    const classRemove = document.getElementsByTagName('td')[3]
-    classRemove.classList.remove('New Class')
-}
+
     
 
 
