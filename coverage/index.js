@@ -43,7 +43,11 @@ function addedClass() {
   }
 }
 
-
+function rimozioneEvent () { // Daniele - onmouseout - html - lezione 2/04
+  for (let i = 0; i < rimozioneEvent.length; i++) {
+    rimozioneEvent[i].removeAttribute("style")
+  }
+}
 
 
 
