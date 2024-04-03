@@ -24,7 +24,7 @@
 
 function changeTitle() {
   // validazione?
-  document.querySelector("h1").innerText = "Shopping Cell";
+  document.querySelector("h1").innerText = "Shopping Cell"
 }
 
 function changeColor(colore) {
@@ -33,21 +33,28 @@ function changeColor(colore) {
 
 function changeAddress() {
   // validazione?
-  document.querySelector("h3").innerText = "Nuovo indirizzo - Via Milano 123";
+  document.querySelector("h3").innerText = "Nuovo indirizzo - Via Milano 123"
 }
 
 function addedClass() {
-  let classA = document.querySelectorAll("a");
+  let classA = document.querySelectorAll("a")
   for (let i = 0; i < classA.length; i++) {
-    classA[i].classList.add("classAdd");
+    classA[i].classList.add("classAdd")
   }
 }
 
-function rimozioneEvent () { // Daniele - onmouseout - html - lezione 2/04
-  for (let i = 0; i < rimozioneEvent.length; i++) {
-    rimozioneEvent[i].removeAttribute("style")
+function rimoveImg() {
+  const images = document.querySelectorAll("img") 
+  for (let i = 0; i < images.length; i++) {
+    if (images[i].classList.contains("hidden")) {
+      images[i].classList.remove("hidden")
+    } else {
+      images[i].classList.add("hidden")
+    }
   }
-}
+} // const image = images[i]
+// image.classList.toggle('hidden')
+
 
 
 
